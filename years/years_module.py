@@ -2,11 +2,17 @@ import datetime
 
 
 def years(age):
-    return
+    now = datetime.datetime.now()
+    difference = 100 - age
+    result = now.year + difference
+    return result
 
 
 def main():
-    return
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    print("%s, you will turn 100 in the year: %s" % (name, years(age)))
+
 
 
 if __name__ == '__main__':
