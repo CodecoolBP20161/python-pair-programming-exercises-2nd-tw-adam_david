@@ -11,7 +11,9 @@ def years(age):
 def main():
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))
-    print("%s, you will turn 100 in the year: %s" % (name, years(age)))
+    repeat = int(input("Enter a number: "))
+    for i in range(repeat):
+        print("%s, you will turn 100 in the year: %s" % (name, years(age)))
 
 
 
